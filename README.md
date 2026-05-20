@@ -1,18 +1,7 @@
 # SOC-multimodal-transformer-24B1219
 ### Khushi Kucheria
 
-Building a multimodal transformer from scratch as part of the Seasons of Code, IIT Bombay project. This project focuses on understanding transformers mathematically and implementing every core component manually using PyTorch — from attention mechanisms to full vision-language models.
-
-## PROJECT STRUCTURE
-- [x] Task 0 — Tensor Warmup & Paper Reading
-- [ ] Task 1 — Bigram + Single Attention Head
-- [ ] Task 2 — Full Transformer Decoder
-- [ ] Task 3 — Vision Transformer
-- [ ] Task 4 — Cross Attention
-- [ ] Task 5 — Contrastive Learning
-- [ ] Task 6 — Training on Paired Data
-- [ ] Task 7 — Retrieval & Evaluation
-- [ ] Task 8 — Final Documentation
+Building a multimodal transformer from scratch as part of the Seasons of Code, IIT Bombay project. This project focuses on understanding transformers mathematically and implementing every core component manually using PyTorch, from attention mechanisms to full vision-language models.
 
 ## Tasks Completed
 
