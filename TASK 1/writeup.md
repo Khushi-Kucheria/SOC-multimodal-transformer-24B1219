@@ -96,4 +96,6 @@ TH: ber test uy bat nif mhar pay yot bingd sint whew 'otadl ous ivetr rul gtint
 
 The bigram model output mostly contains random-looking character transitions and broken word structures. While it learns some local character statistics, the generated text quickly loses coherence and resembles random noise after a few characters.
 
-The attention-based model produces text that appears slightly more structured and natural. Word fragments, spacing, and punctuation patterns are more realistic because the model can attend to previous tokens while generating the next one. Short-term consistency is noticeably improved compared to the bigram model.
+The attention-based model produces text that appears slightly more structured and natural. A lot of words still feel like nonsense but many of them resemble actual English words. There's even more consistency in sentence formation. Short-term consistency is noticeably improved compared to the bigram model.
+
+This difference is mainly because of the fact that attention model looks at all previous characters instead of just the immediate predecessor. So it is able to capture longer range dependancies and output better coherent text.
