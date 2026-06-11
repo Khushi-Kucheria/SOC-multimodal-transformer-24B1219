@@ -1,3 +1,13 @@
+### Q7. Compare your CNN baseline and your ViT on CIFAR-10. Which got better validation accuracy? Why might that be — what advantages does each architecture have?
+
+The CNN baseline achieved better validation accuracy than the Vision Transformer on CIFAR-10. The CNN reached a validation accuracy of 73.90%, while the ViT achieved 67.50%. 
+
+One reason for this difference is that CNNs have strong in-built biases that are well suited for image data. Through weight sharing and local receptive fields, CNNs naturally learn features such as edges, textures, and shapes while using relatively few parameters. These properties make CNNs more data-efficient and particularly effective on smaller datasets such as CIFAR-10.
+
+In contrast, Vision Transformers split the image into patches and use self-attention to learn relationships between them. This allows the model to capture long-range dependencies and global context more effectively than CNNs. However, because ViTs have fewer built-in assumptions about images, they generally require larger datasets and more training data to outperform CNNs.
+
+In this experiment, the CNN performed better because CIFAR-10 is a relatively small dataset, allowing the CNN's inductive biases to provide a significant advantage. Nevertheless, the ViT successfully learned meaningful image representations using patch embeddings and self-attention, demonstrating how transformer architectures can also be applied to computer vision tasks.
+
 ### Q8. In your own words, explain why patching is necessary for ViT. Why not feed pixels directly? 
 
 Patching is necessary because self-attention compares every token with every other token. A CIFAR-10 image has 32×32×3 = 3072 pixel values, and treating each pixel as a separate token would require a very large number of attention computations. Since attention scales quadratically with the number of tokens, this would be computationally expensive and slow to train.
