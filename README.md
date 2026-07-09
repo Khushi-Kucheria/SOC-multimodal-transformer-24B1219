@@ -13,3 +13,15 @@ Implemented a character-level bigram language model and upgraded it with a singl
 
 ### Task 2 : Full Transformer Decoder
 Built a decoder-only transformer with multi-head attention, residual connections, LayerNorm, and feed-forward networks, while also deriving attention gradients mathematically and performing ablation experiments.
+
+### Task 3 : Vision Transformer
+Implemented a Vision Transformer (ViT) for image classification on CIFAR-10 by converting images into patch embeddings, adding positional encodings, and training transformer encoder blocks, followed by a comparison with a CNN baseline.
+
+### Task 4 : Cross-Attention & Multimodal Fusion
+Implemented cross-attention from scratch to enable information exchange between image and text embeddings, visualized attention maps, and explored how multimodal transformers align features across different modalities.
+
+### Task 5 : CLIP-Style Contrastive Learning
+Built a CLIP-style dual encoder consisting of a Vision Transformer and Transformer text encoder, implemented InfoNCE contrastive loss with a learnable temperature parameter, and trained the model to align image and text representations.
+
+### Task 6 : Training on Flickr8k
+Constructed an end-to-end vision-language pipeline using the Flickr8k dataset, including dataset preprocessing, tokenization, dataloaders, and a complete training loop to learn aligned image-text embeddings through contrastive learning.
